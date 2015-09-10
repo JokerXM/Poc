@@ -1,0 +1,43 @@
+﻿@model PoCPoC.Models.Contribution
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Contribution</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Quanlity)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Quanlity)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.contributiontype.type)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.contributiontype.type)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.E.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.E.Name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

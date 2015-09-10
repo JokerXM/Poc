@@ -1,0 +1,47 @@
+﻿@model PoCPoC.Models.Contribution
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Contribution</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Quanlity)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Quanlity)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.contributiontype.type)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.contributiontype.type)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.E.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.E.Name)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

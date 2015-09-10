@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<h2> hello  this is our system, events management system , login to join us!</h2>
+
+@using (Html.BeginForm("Login", "User", FormMethod.Post))
+{
+    <p>
+
+        UserName: @Html.TextBox("username");
+        Password: @Html.Password("password");
+
+        <input type="submit" value="Login" />
+    </p>
+}

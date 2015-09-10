@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Addtype";
+}
+
+<h2>Addtype</h2>
+@Html.BeginForm("Addtype", "Event", FormMethod.Post)
+        UserName: @Html.TextBox("typename")
+        <input type="submit" value="add now" />
+    

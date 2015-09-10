@@ -1,0 +1,57 @@
+﻿@model PoCPoC.Models.Events
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Events</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Address)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Address)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DateAndTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DateAndTime)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.status.status)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.status.status)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.type.type)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.type.type)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.E_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
